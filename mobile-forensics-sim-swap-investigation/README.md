@@ -1,4 +1,4 @@
-# Operation SIM Shift — Mobile Money Fraud via SIM Swap
+# Operation SIM Shift. Mobile Money Fraud via SIM Swap
 
 **Digital Forensics Examination Report**  
 **Case Reference:** HC-GH-2025-SF-0089
@@ -11,7 +11,7 @@
 |----------|-------|
 | Case ID | HC-GH-2025-SF-0089 |
 | Investigation Title | Operation SIM Shift |
-| Investigation Type | Mobile Forensics — Mobile Money Fraud (SIM Swap) |
+| Investigation Type | Mobile Money Fraud (SIM Swap) |
 | Jurisdiction | Republic of Ghana |
 | Device | Samsung Galaxy A23 |
 | Android Version | 13 |
@@ -20,7 +20,7 @@
 | Image Format | E01 |
 | Hash Verification | MD5 verified |
 | Lead Examiner | Julian Derry |
-| Organization | Hive Consult — Digital Forensics Division |
+| Organization | Hive Consult |
 | Report Date | 2025-04-02 |
 
 ---
