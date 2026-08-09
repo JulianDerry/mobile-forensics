@@ -191,7 +191,7 @@ Hash values were calculated immediately after acquisition and verified prior to 
 | Encryption Status | Encrypted |
 | Acquisition Limitations | Device's security patch level limited privilege escalation during File System acquisition, resulting in a reduced dataset relative to Advanced Logical |
 
-**Examiner Note (Advanced Logical review):** The Advanced Logical case was initially reviewed using the .ufdx file alone, which returned no media or file artifacts. A subsequent review incorporating the associated extraction archive (.zip) revealed the complete Device Data Files. The figures reported in Section 5 reflect this corrected, complete review. No such issue applied to the File System extraction, which was reviewed as a complete dataset from the outset.
+**Examiner Note (Advanced Logical review):** The Advanced Logical case was initially reviewed using the .ufdx file alone, which returned no media or file artifacts. A subsequent review incorporating the associated extraction archive (.zip) revealed the complete Device Data Files. 
 
 **Examiner Note (File System limitation):** File system extraction was performed but limited by the device's security patch level, which restricted privilege escalation, resulting in a reduced dataset compared to the Advanced Logical extraction. File system extraction generally needs elevated privileges to reach protected storage, whereas Advanced Logical uses vendor built routines that pull from structured app containers and database paths without needing that escalation, so it was not blocked in the same way.
 
