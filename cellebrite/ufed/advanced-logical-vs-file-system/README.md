@@ -27,7 +27,7 @@
    - 5.2 User Data
    - 5.3 Media and Metadata
    - 5.4 Location Artifacts
-   - 5.5 Deleted Data Recovery
+   - 5.5 Data Recovery
    - 5.6 Cross-Method Comparison
 6. [Conclusion](#6-conclusion)
 7. [Appendices](#7-appendices)
@@ -283,7 +283,7 @@ Both extractions recovered media artifacts from the device, with Advanced Logica
 
 **Examiner Note:** No location artifacts were recovered from either the Advanced Logical or File System extraction. Location artifacts are typically stored in system and app-level databases that neither acquisition method reliably captured on this device, consistent with the privilege-escalation limitation discussed in Section 4.4.
 
-### 5.5 Deleted Data Recovery
+### 5.5 Data Recovery
 
 Deleted records were examined using forensic recovery techniques, including database review and artifact analysis where applicable.
 
