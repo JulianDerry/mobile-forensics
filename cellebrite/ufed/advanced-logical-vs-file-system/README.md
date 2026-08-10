@@ -62,7 +62,7 @@ This examination involved the forensic acquisition and analysis of a Samsung SM-
 
 ### 1.4 Examination Objectives
 
-- Evaluate and compare the data yield of Advanced Logical and File System extraction methods on a device with an updated security patch level.
+- Evaluate and compare the data yield of Advanced Logical and File System extraction methods on a device with an updated security patch level. This evaluation was conducted on a device running Android 13 (Security Patch Level: 1 December 2025, Base Version: A032FXXS9CZA1) to assess how extraction method choice affects artifact recovery under current security conditions.
 - Identify and preserve data stored on the device.
 - Acquire forensic copies of accessible data.
 - This evaluation focused on extraction method comparison at the data yield and artifact-count level, detailed analysis of individual artifact categories (communications, user activity, media, location, deleted data) was outside the scope of this exercise.
