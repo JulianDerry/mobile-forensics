@@ -131,7 +131,7 @@ This examination involved the forensic acquisition and analysis of a Samsung SM-
 | Screen State | Unlocked |
 | Battery Level | 62% |
 | SIM Present | Yes |
-| External Damage | Multiple cracks on screen; scratches on body; small chip below power button |
+| External Damage | Multiple cracks on screen, scratches on body; small chip below power button |
 
 ### 3.2 Isolation and Preservation Measures
 
@@ -148,12 +148,6 @@ This examination involved the forensic acquisition and analysis of a Samsung SM-
 - Top and bottom edges
 - Screen display upon receipt
 - Any visible damage
-
-**Figures**
-- Figure 1: Front View
-- Figure 2: Rear View
-- Figure 3: Screen State on Receipt
-- Figure 4: External Damage
 
 ---
 
@@ -195,9 +189,9 @@ Hash values were calculated immediately after acquisition and verified prior to 
 | Encryption Status | Encrypted |
 | Acquisition Limitations | Device's security patch level limited privilege escalation during File System acquisition, resulting in a reduced dataset relative to Advanced Logical |
 
-**Examiner Note (Advanced Logical review):** The Advanced Logical case was initially reviewed using the .ufdx file alone, which returned no media or file artifacts. A subsequent review incorporating the associated extraction archive (.zip) revealed the complete Device Data Files. 
+**Examiner Note: Advanced Logical review:** The Advanced Logical case was initially reviewed using the .ufdx file alone, which returned no media or file artifacts. A subsequent review incorporating the associated extraction archive (.zip) revealed the complete Device Data Files. 
 
-**Examiner Note (File System limitation):** File system extraction was performed but limited by the device's security patch level, which restricted privilege escalation, resulting in a reduced dataset compared to the Advanced Logical extraction. File system extraction generally needs elevated privileges to reach protected storage, whereas Advanced Logical uses vendor built routines that pull from structured app containers and database paths without needing that escalation, so it was not blocked in the same way.
+**Examiner Note: File System limitation:** File system extraction was performed but limited by the device's security patch level, which restricted privilege escalation, resulting in a reduced dataset compared to the Advanced Logical extraction. File system extraction generally needs elevated privileges to reach protected storage, whereas Advanced Logical uses vendor built routines that pull from structured app containers and database paths without needing that escalation, so it was not blocked in the same way.
 
 The observations and limitations documented in this section apply specifically to the version of Cellebrite UFED used during this examination and should not be generalized to all versions of the software.
 
@@ -240,7 +234,7 @@ A total of 1 contact record was acquired.
 |---|---|---|
 | Jude | 02461xxxxx | |
 
-**Examiner Note:** The extraction contained only one contact record. During examination, it was confirmed that only one contact was intentionally stored in the device's internal contact storage. The extraction may have been permitted to access device contact data while SIM card contact storage was not accessible, or SIM-resident contacts were not included in the extracted dataset.
+**Examiner Note:** The extraction contained only one contact record. During examination, it was confirmed that only one contact was intentionally stored in the device's internal contact storage. The extraction was permitted to access device contact data while SIM card contact storage was not accessible.
 
 **Calendar Entries**
 
@@ -252,7 +246,7 @@ A total of 1 calendar event was acquired.
 
 **Examiner Confirmation:** The examiner confirmed that only one calendar event had been manually added to the device prior to acquisition.
 
-Additional user artifacts such as notes, reminders, and emails were reviewed where accessible.
+Additional user artifacts such as notes, reminders, and emails were not present.
 
 ### 5.3 Media and Metadata
 
@@ -270,11 +264,11 @@ Additional user artifacts such as notes, reminders, and emails were reviewed whe
 
 **Findings**
 
-Media artifacts were recovered from both extractions, with the Advanced Logical extraction yielding a broader file set across nearly every category. A sample verification was performed: one video file from the Advanced Logical extraction and one audio file from the File System extraction were opened and confirmed to play successfully, indicating the recovered media is intact and not corrupted. A full content review of all recovered files, along with EXIF, geolocation, or timestamp metadata analysis, was not performed and was outside the scope of this examination.
+Media artifacts were recovered from both extractions, with the Advanced Logical extraction yielding a broader file set across nearly every category. A sample verification was performed. One video file from the Advanced Logical extraction and one audio file from the File System extraction were opened and confirmed to play successfully, indicating the recovered media is intact and not corrupted. A full content review of all recovered files, along with EXIF, geolocation, or timestamp metadata analysis, was not performed and was outside the scope of this examination.
 
 **Interpretation**
 
-Both extractions recovered media artifacts from the device, with Advanced Logical yielding a substantially broader file set than File System across nearly every category. The methodological reasons for this divergence, tied to the device's security patch level restricting privilege escalation during File System acquisition, are discussed in Section 5.6.
+Both extractions recovered media artifacts from the device, with Advanced Logical yielding a substantially broader file set than File System across nearly every category. The methodological reasons for this divergence, tied to the device's security patch level restricting privilege escalation during File System acquisition are discussed in Section 5.6.
 
 ### 5.4 Location Artifacts
 
@@ -306,11 +300,11 @@ The absence of recovered deleted artifacts in this examination should not be int
 
 Both Advanced Logical and File System extractions were performed on this device to evaluate whether the two methods produced consistent results, and to document the effect of the device's security patch level on extraction outcomes.
 
-Device Data (Calendar, Call Log, Contacts, Device Info, Instant Messages) was identical across both extractions: 111 call records, 374 SMS/MMS records, 1 contact, 1 calendar entry, and 16 device info fields in each. This consistency indicates both methods reliably captured OS-level structured data regardless of acquisition type.
+*Device Data* (Calendar, Call Log, Contacts, Device Info, Instant Messages) was identical across both extractions: 111 call records, 374 SMS/MMS records, 1 contact, 1 calendar entry, and 16 device info fields in each. This consistency indicates both methods reliably captured OS-level structured data regardless of acquisition type.
 
-Device Data Files diverged significantly, as shown in Section 5.3. Advanced Logical recovered a substantially larger and more categorized file set (190 images, 85 text files, 13 archives, 3 videos, 1 document) compared to File System (178 images, 1 text file, 1 archive, 0 videos, 0 documents), with a higher Uncategorized count of 13 versus 5.
+*Device Data Files* diverged significantly, as shown in Section 5.3. Advanced Logical recovered a substantially larger and more categorized file set (190 images, 85 text files, 13 archives, 3 videos, 1 document) compared to File System (178 images, 1 text file, 1 archive, 0 videos, 0 documents), with a higher Uncategorized count of 13 versus 5.
 
-This divergence is attributed to the device's security patch level restricting the privilege escalation that File System extraction requires to reach protected app-specific storage. Advanced Logical extraction avoided this limitation by using vendor built routines that query structured application containers and database paths directly, without needing elevated OS privileges. The higher Uncategorized count in the File System result is also consistent with a privilege-limited pull: files were present but not fully parsed or categorized by the tool.
+This divergence is attributed to the device's security patch level restricting the privilege escalation that File System extraction requires to reach protected app-specific storage. Advanced Logical extraction avoided this limitation by using vendor built routines that query structured application containers and database paths directly, without needing elevated OS privileges. The higher Uncategorized count in the File System result is also consistent with a privilege-limited pull. Files were present but not fully parsed or categorized by the tool.
 
 This result demonstrates that extraction method selection, and awareness of device patch level, has a direct and measurable effect on data yield, and that relying on a single extraction method may understate the data actually present on a device.
 
