@@ -80,6 +80,9 @@ This examination involved the forensic acquisition and analysis of a Samsung SM-
 | Device Type | Mobile Phone |
 | Manufacturer | Samsung |
 | Model | SM-A032F A03 Core |
+| Android Version | 13 |
+| Security Patch Level | 1 December 2025 |
+| Based Version | A032FXXS9CZA1 |
 | Color | Black |
 | Physical Condition | Several cracks on phone screen |
 
