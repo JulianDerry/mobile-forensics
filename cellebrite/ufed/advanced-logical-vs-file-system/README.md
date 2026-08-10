@@ -193,6 +193,8 @@ Hash values were calculated immediately after acquisition and verified prior to 
 
 **Examiner Note: File System limitation:** File system extraction was performed but limited by the device's security patch level, which restricted privilege escalation, resulting in a reduced dataset compared to the Advanced Logical extraction. File system extraction generally needs elevated privileges to reach protected storage, whereas Advanced Logical uses vendor built routines that pull from structured app containers and database paths without needing that escalation, so it was not blocked in the same way.
 
+Known vulnerabilities and public exploits were researched against this device's exact configuration, Android 13, Security Patch Level 1 December 2025, Base Version A032FXXS9CZA1. No unpatched public exploits were found to be actively viable against this build. This finding is consistent with the privilege-escalation limitations encountered during File System acquisition and explains why Physical/bootloader extraction was not pursued as part of this exercise.
+
 The observations and limitations documented in this section apply specifically to the version of Cellebrite UFED used during this examination and should not be generalized to all versions of the software.
 
 ---
