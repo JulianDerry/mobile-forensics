@@ -65,7 +65,7 @@ This examination involved the forensic acquisition and analysis of a Samsung SM-
 - Evaluate and compare the data yield of Advanced Logical and File System extraction methods on a device with an updated security patch level.
 - Identify and preserve data stored on the device.
 - Acquire forensic copies of accessible data.
-- Analyze communications, user activity, media artifacts, location artifacts, and recoverable deleted data.
+- This evaluation focused on extraction method comparison at the data yield and artifact-count level, detailed analysis of individual artifact categories (communications, user activity, media, location, deleted data) was outside the scope of this exercise.
 - Produce a documented forensic report suitable for technical review and evidential reference.
 
 ---
@@ -103,7 +103,8 @@ This examination involved the forensic acquisition and analysis of a Samsung SM-
 | Item | Value |
 |---|---|
 | SIM Slot | SIM 1 & SIM 2 |
-| ICCID | |
+| ICCID (SIM 1)| Not obtained |
+| ICCID (SIM 2)| 8923 3020 5072 04XXXX |
 | IMSI | 6200xxxxxx58050 \| 6200xxxxxx48328 |
 | Carrier | MTN \| TELECEL |
 
@@ -338,6 +339,7 @@ The examination was conducted using Cellebrite UFED version 7.71.0.1858 and Cell
 | Appendix G | Media File Index |
 | Appendix H | Location Artifact Export |
 | Appendix I | Screenshot Repository, organized in two folders by extraction method (Advanced Logical / File System), corresponding to Sections 4 and 5. |
+| Appendix J | Photo of the SIM tray showing both Telecel and MTN SIM cards as physically installed in the device at time of extraction. ICCID and identifying numbers redacted for privacy. Included to document physical verification of SIM presence referenced in Findings. |
 
 ---
 
