@@ -1,28 +1,43 @@
-# Mobile-Forensics
+# Mobile Forensics
 
-This repository contains mobile forensic investigations, artifact analysis exercises, and DFIR case studies completed as part of my practical digital forensics training. The work focuses on identifying, extracting, and interpreting evidence from Android and iOS devices using industry-recognized forensic methodologies.
+A structured portfolio of Android and iOS digital forensics investigations, extraction analysis, application artifacts, SQLite research, and forensic reporting.
 
-## Repository Contents
+## Portfolio Areas
 
-* Android artifact analysis
-* iOS artifact analysis
-* Application data examination
-* Timeline reconstruction
-* User activity analysis
-* Forensic reporting examples
+### 📱 Investigations
 
-## Tools Used
+- Android Forensics
+- iOS Forensics
+- Logical vs File System Extraction Analysis
+- Application Data Examination
+- User Activity Analysis
+- Mobile Timeline Reconstruction
 
-* Magnet AXIOM
-* Cellebrite UFED
-* MobileEdit
-* SQLite tools
-* Python (supporting analysis scripts)
+### 🧪 Artifact Research
 
-## Objective
+- SQLite databases
+- iOS KnowledgeC.db
+- Android application artifacts
+- User dictionary artifacts
+- Device and system artifacts
+- Application-level activity traces
 
-The goal of this repository is to demonstrate hands-on mobile forensics skills, evidence handling practices, and structured forensic documentation suitable for DFIR and mobile forensic analyst roles.
+### 🛠️ Tools Used
+
+- Cellebrite UFED
+- Magnet AXIOM
+- MobileEdit
+- SQLite tools
+- Python
+
+## Investigation Standard
+
+Case studies document the acquisition or extraction context, evidence handling, examination, artifact interpretation, timeline reconstruction, findings and limitations where applicable.
+
+## Portfolio Position
+
+Mobile forensics is a dedicated specialization within the wider Julian Derry DFIR portfolio, covering both Android and iOS evidence.
 
 ## Disclaimer
 
-All investigations in this repository are conducted on training datasets, lab environments, or authorized evidence sources for educational and professional portfolio purposes.
+Investigations in this repository are conducted on training datasets, lab environments, or authorized evidence sources for educational and professional portfolio purposes. Portfolio material does not represent confidential client evidence.
